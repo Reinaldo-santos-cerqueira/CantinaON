@@ -1,0 +1,137 @@
+:root {
+    --primary-color: rgb(98, 152, 253) ;
+    --bg-color: #130f0d;
+    --text-color: #f0f0f5;
+    --light-color: rgba(255, 255, 255, 0.04);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-image: url('../img/bg_login_cadastro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    color: #f0f0f5;
+}
+main {
+    height: 100vh;
+    background-color: #10101099;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    background: #101010;
+
+    width: 100%;
+    max-width: 500px;
+
+    margin: auto auto;
+    padding: 32px 64px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    margin-bottom: 32px;
+}
+
+div.input {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+input,
+button {
+    /* reset appeareance */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    /* box */
+    width: 100%;
+
+    padding: 16px 0;
+
+    border:none;
+    border-bottom: 1px solid var(--primary-color);
+
+    background-color: transparent;
+
+    outline: none;
+
+    /* text */
+    color: var(--text-color);
+    font-size: 1em;
+
+}
+
+button {
+    margin-top: 16px;
+    background-color: var(--primary-color);
+    color: black;
+}
+button:hover{
+    background-color: rgb(49, 121, 253) ;
+}
+input ~ label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    transform: translateY(-24px);
+    color: rgba(255, 255, 255, 0.6) ;
+
+}
+
+.input span.error {
+    display: flex;
+    
+    padding: 0;
+
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.input span.error.active {
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    padding: 0.4em;
+}
+a{
+    font-size: 1rem;
+    color: white;
+}
+
+a:hover{
+    color:  rgb(98, 152, 253) ;
+    cursor: pointer;
+}
+.social_icon span a{
+    font-size: 3rem;
+    color: white;
+    margin: 50px;
+}
+.social_icon{
+    margin-right: auto;
+    margin-bottom: auto;
+
+}
+.social-icons{
+    text-align: center;
+    margin-top: 20px;
+}

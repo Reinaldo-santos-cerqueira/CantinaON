@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Login validação js</title>
   	<!--Bootsrap 4 CDN-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
@@ -14,32 +14,36 @@
   <!-- Fonts google-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap">
 </head>
+
 <body>
   <main>
     <form action="">
-      <p class="text-center"><a href="index.html"><img src="img/logo_menu.png" alt="" style="height: 100%; width: 100%; max-width: 200px; max-height: 200px; margin-left: auto; margin-right: auto;"></a></p>
+      <img src="img/logo_menu.png" alt="" style="height: 100%; width: 100%; max-width: 200px; max-height: 200px; margin-left: auto; margin-right: auto;">
       <h2 style="text-align: center;">
-        Sign In
+        Cadastro escola
       </h2>
       <div class="input">
-        <input required name="cnpj" id="cnpj"type="text"/>
-        <label for="cnpj">CNPJ</label>
+        <input required id="name" name="name" type="text" minlength="10"/>
+        <label for="name">Nome</label>
         <span class="error"></span>
       </div>
       <div class="input">
-        <input required type="password" id="password" name="password"minlength="6" maxlength="10"/>
-        <label for="password">Senha</label>
+        <input required id="email" name="email" type="email"/>
+        <label for="email">Email</label>
         <span class="error"></span>
       </div>
-      <button type="submit">Sign in</button>
-      <div class="social-icons">
-        <div class="social_icon">
-          <h6> Ainda não possui conta?<a href="cadastro.html">Clique aqui</a></h6>
-          <h6>Ou escolha alguma dessas redes socias</h6>
-          <span><a href=""><i class="fab fa-facebook-square"></i></a></span>
-          <span><a href=""><i class="fab fa-google-plus-square"></i></a></span>
-        </div>
+      <div class="input">
+        <input required  type="password" minlength="6" maxlength="10" id="senha"/>
+        <label for="senha">Senha</label>
+        <span class="error"></span>
       </div>
+      <div class="input">
+        <input required type="text" minlength="14" maxlength="14" id="cnpj"/>
+        <label style>CNPJ</label>
+        <span class="error"></span>
+      </div>
+      <h6 style="text-align:end">Ja tem conta?<a href="login.html">Clique aqui</a></h6>
+      <button type="submit">Cadastrar</button>
     </form>
   </main>
 </body>
