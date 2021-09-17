@@ -253,6 +253,9 @@ header .menu_mobile{
     transition: transform 1s;
     transform: rotateY(360deg);
 }
+#client_container_mobile{
+    display: none;
+}
 /*Contatc section*/
 .contact_section{    
     padding:10vh 0;   
@@ -428,6 +431,9 @@ footer .container .row .col-md-4 .quick_links a:hover{
     /*Cliente*/
     #client_container_desktop{
         display:none;
+    }
+    #client_container_mobile{
+        display: block;
     }
     .card-mobile{
         color: #e1e1e1;
