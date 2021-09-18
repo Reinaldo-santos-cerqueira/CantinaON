@@ -20,11 +20,21 @@
     <form action="">
       <img src="img/logo_menu.png" alt="" style="height: 100%; width: 100%; max-width: 200px; max-height: 200px; margin-left: auto; margin-right: auto;">
       <h2 style="text-align: center;">
-        Cadastro escola
+        Cadastro Funcionario
       </h2>
       <div class="input">
         <input required id="name" name="name" type="text" minlength="10"/>
         <label for="name">Nome</label>
+        <span class="error"></span>
+      </div>
+      <div class="input">
+        <input required id="name" name="name" type="text" minlength="10"/>
+        <label for="name">CPF</label>
+        <span class="error"></span>
+      </div>
+      <div class="input">
+        <input required id="name" name="name" type="text" minlength="10"/>
+        <label for="name">Telefone</label>
         <span class="error"></span>
       </div>
       <div class="input">
@@ -37,13 +47,8 @@
         <label for="senha">Senha</label>
         <span class="error"></span>
       </div>
-      <div class="input">
-        <input required type="text" minlength="14" maxlength="14" id="cnpj"/>
-        <label style>CNPJ</label>
-        <span class="error"></span>
-      </div>
-      <h6 style="text-align:end">Ja tem conta?<a href="login.html">Clique aqui</a></h6>
-      <button type="submit">Cadastrar</button>
+      <h6 style="text-align:end">Ja possui uma conta?<a href="login.html">Clique aqui</a></h6>
+      <button formaction="cadastro_escola.html">Confirmar</button>
     </form>
   </main>
 </body>
