@@ -17,8 +17,8 @@ html {
 }
 
 body {
-    height: 100vh;
-
+    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 
@@ -59,7 +59,7 @@ div.input {
 }
 
 input,
-button {
+button  {
     /* reset appeareance */
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -80,8 +80,8 @@ button {
     /* text */
     color: var(--text-color);
     font-size: 1em;
-
 }
+
 
 button {
     margin-top: 16px;
@@ -99,7 +99,6 @@ input ~ label {
     color: rgba(255, 255, 255, 0.6) ;
 
 }
-
 .input span.error {
     display: flex;
     
