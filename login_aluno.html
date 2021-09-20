@@ -22,7 +22,7 @@
         Login aluno
       </h2>
       <div class="input">
-        <input required  name="matricula" id="matricula"type="text"/>
+        <input  name="matricula" id="matricula"type="text" data-rules="required|min=5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
         <label for="matricula">N° da Matricula</label>
       </div>
       <div class="input">
