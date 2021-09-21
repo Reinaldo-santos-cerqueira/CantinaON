@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&family=Revalia&display=swap');
+
+/*reset css*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/*body*/
+body{
+    min-height:100vh;
+    overflow-x: hidden;
+    background-color: #101010;
+    font-family: 'Kaisei HarunoUmi', serif;
+    color: #e1e1e1; 
+
+}
+/*Por a fonte nos H1*/
+
+h2{
+    padding:1vh 0 1vh 10vh;
+    margin: 0 auto;
+    width:90vw;
+    color: #e1e1e1; 
+    border-top: 2px solid #e1e1e1;
+    border-bottom: 2px solid #e1e1e1;
+    font-family: 'Revalia', cursive;
+}
+h3{
+    color: #e1e1e1; 
+    text-align: center;
+    font-family: 'Revalia', cursive;
+    padding:5vh 0;
+}
+header .menu_desktop{
+    position: fixed;
+    padding: 10px 100px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    font-family: 'Revalia', cursive;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#101010;
+    z-index: 100000000;
+    transition: 0.6s;
+
+}
+header .menu_desktop .logo{
+    position: relative;
+    transition: 0.6s;
+}
+header .menu_desktop ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .menu_desktop ul li{
+    position: relative;
+    list-style: none;
+}
+header .menu_desktop ul li a{
+    position: relative;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+}
+header .menu_desktop ul li a :nth-last-child(){
+    margin:0;
+}
+header .menu_desktop ul li a:hover{
+    position: relative;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #E1e1e199;
+    letter-spacing: 2px;
+    font-weight: 500px;
+}
+header .menu_desktop.sticky{
+    position: fixed;
+    transition: 0.6s;
+    background-color: #101010;
+    display: absolute;
+    z-index: 100000000;
+}
+header .menu_mobile{
+    display: none;
+}
+.loja_section,.informações_section,.meus_filhos_section,.add_saldo_section,.historico_section{
+    padding:20vh 0 10vh 0; 
+    background-color: #101010;
+    color:e1e1e1; 
+}
+
+.loja_section .card{
+    background-color: #10101011;
+    border:1px solid #e1e1e1;
+    color: #e1e1e1;
+    padding: 1vh;
+    margin-bottom: 5vh;
+}
+.loja_section .card button{
+    width:100%;
+    padding: .5vh;
+    font-size: 1.2rem;
+}
+#btn-final{
+    justify-content:center;
+    align-items: center;
+    text-align:center;
+
+}
+#btn-final button{
+    padding: 1.5vh;
+    font-size: 1.3rem;
+}
+.informações_section .col-md-6{
+    margin-top:5vh;
+    padding: 2vh;
+}
+.text_informacao{
+    color: #e1e1e1;
+    font-size: 1.5rem;
+}
+.meus_filhos_section .card{
+    background-color: #101010;
+    color: #e1e1e1;
+    border: 1px solid #e1e1e1;
+    padding:1vh;
+}
+.meus_filhos_section .card button{
+    width:100%;
+    margin: 1vh 0;
+}
+.add_saldo_section input{
+    width:100%;
+    padding: 1vh;
+    margin: 2vh 0;
+}
+.add_saldo_section label{
+    width:100%;
+    color: #e1e1e1;
+    margin-top: 10vh;
+}
+.add_saldo_section p{
+    width:100%;
+    color: #e1e1e1;
+    margin-top: 5vh;
+}
+.historico_section .card{
+    margin-top: 5vh;
+    background-color: #101010;
+    color: #e1e1e1;
+    border: 1px solid #e1e1e1;
+}
+/*Footer*/
+footer{
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+}
+
+footer .container .row .col-md-4 .social_midia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:20px;
+}
+footer .container .row .col-md-4 .social_midia a{
+    color: #e1e1e1;
+    padding: 15px;
+    font-size: 1.5rem;
+    background-color: #252525;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px black;
+    transition: transform 1s;
+    transform: rotateY(0deg);
+}
+footer .container .row .col-md-4 .social_midia a:hover{
+    background-color: #000;
+    box-shadow: 2px 2px 2px 2px black;
+    color: #e1e1e1;
+    transition: transform 1s;
+    transform: rotateY(360deg);
+}
+footer .container .row .col-md-4 h4{
+    font-family: 'Revalia', cursive;
+    letter-spacing: 5px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 2vh;
+}
+
+footer .container .row .col-md-4 .quick_links ul{
+    list-style: none;
+}
+footer .container .row .col-md-4{
+    padding-top:2vh;
+    border-right: 1px solid #e1e1e1;
+}
+footer .container .row .col-md-4:nth-child(3){
+    border: none;
+}
+footer .container .row .col-md-4 .quick_links li{
+    padding:2vh;
+}
+footer .container .row .col-md-4 .quick_links a{
+    text-decoration: none;
+    color: #e1e1e1;
+    font-size: 1rem;
+}
+footer .container .row .col-md-4 .quick_links a:hover{
+    color: #e1e1e199;
+}
+.item_locale{
+    display: flex;
+}
+.item_locale i{
+    font-size:2rem;
+    margin:2vh;
+    color: #e1e1e1;
+    padding: 15px;
+    font-size: 1rem;
+    transition: transform 1s;
+    transform: rotateY(0deg);
+}
+.item_locale:hover i{
+    transition: transform 1s;
+    transform: rotateY(360deg);
+    background-color: #000;
+
+}
+.item_locale p{
+    font-size:1.3rem;
+    margin:2vh;
+    width: 100%;
+}
+
+@media screen and (max-width:768px){
+    header .menu_desktop{
+        display:none;
+    }
+    header .menu_mobile{
+        display:block;
+    }
+    header .menu_mobile i{
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        font-size: 2rem;
+        color: #e1e1e1;
+        background-color: #101010;
+        padding:10px;
+    }
+    header .menu_mobile .mobile{
+        display:flex;
+        position: fixed;
+        top:-500px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height:auto;
+        transition: transform 1s;
+        background-color: #101010;
+    }
+    header .menu_mobile .mobile i{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-size: 2rem;
+        color: #e1e1e1;
+        background-color: #101010;
+        padding:10px;
+    }
+    header .menu_mobile .mobile img{
+        padding-top: 5vh;
+    }
+    header .menu_mobile .mobile ul {
+        margin: 5vh;
+        list-style: none;
+        text-align: center;
+    }
+    header .menu_mobile .mobile ul li{
+        padding-top: 2vh;
+    }
+    header .menu_mobile .mobile ul li a{
+        color: #e1e1e1;
+        text-decoration: none;
+    }
+}

@@ -27,6 +27,10 @@
         <label for="name">Nome</label>
       </div>
       <div class="input">
+        <input id="login" name="login" type="text" data-rules="required"/>
+        <label for="login">Login</label>
+      </div>
+      <div class="input">
         <input id="email" name="email" type="text" data-rules="required|email"/>
         <label for="email">Email</label>
       </div>
@@ -42,7 +46,11 @@
         <input type="phone" id="phone"name="phone"data-rules="required|phone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
         <label for="phone">Telefone</label>
       </div>
+
       <button type="submit">Cadastrar</button>
+      <div class="social_icon" style="margin-top:1vh">
+        <h6> Voltar a tela do funcionario?<a href="tela_funcionario_principal.html">Clique aqui</a></h6>
+      </div>  
     </form>
   </main>
   <script src="js/script_forms.js"></script>

@@ -17,3 +17,8 @@ exit_menu.addEventListener('click',function(){
     menu_mobile.style.top = '-500px';
     menu_mobile.style.transition =  '1s';
 });
+var saldo = document.getElementById('saldo');
+var input  = document.getElementById('number');
+function addSaldo(){
+    saldo.innerHTML =   number.value;
+}

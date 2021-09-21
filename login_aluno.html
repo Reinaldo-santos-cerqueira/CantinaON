@@ -16,14 +16,14 @@
 </head>
 <body>
   <main>
-    <form action="" class="form-validation">
+    <form action="tela_aluno_principal.html" class="form-validation">
       <p class="text-center"><a href="index.html"><img src="img/logo_menu.png" alt="" style="height: 100%; width: 100%; max-width: 200px; max-height: 200px; margin-left: auto; margin-right: auto;"></a></p>
       <h2 style="text-align: center;">
         Login aluno
       </h2>
       <div class="input">
-        <input  name="matricula" id="matricula"type="text" data-rules="required|min=5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
-        <label for="matricula">N° da Matricula</label>
+        <input id="login" name="login" type="text" data-rules="required"/>
+        <label for="login">Login</label>
       </div>
       <div class="input">
         <input  type="password" id="senha" data-rules="required|min=5"/>

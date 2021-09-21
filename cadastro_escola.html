@@ -39,12 +39,16 @@
         <input type="text" id="localizacao"name="localizacao"data-rules="required|min=15"/>
         <label for="localizacao">Localização</label>
       </div>
+      
       <div class="input">
         <input type="phone" id="phone"name="phone"data-rules="required|phone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
         <label for="phone">Telefone</label>
       </div>
       <h6 style="text-align:end">Ja tem conta?<a href="login_escola.html">Clique aqui</a></h6>
       <button type="submit">Cadastrar</button>
+      <div class="social_icon" style="margin-top:1vh">
+        <h6> Voltar a tela principal?<a href="index.html">Clique aqui</a></h6>
+      </div> 
     </form>
   </main>
   <script src="js/script_forms.js"></script>
