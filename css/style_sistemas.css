@@ -92,7 +92,7 @@ header .menu_desktop.sticky{
 header .menu_mobile{
     display: none;
 }
-.loja_section,.informações_section,.meus_filhos_section,.add_saldo_section,.historico_section{
+.loja_section,.informações_section,.meus_filhos_section,.add_saldo_section,.historico_section,.controle_section{
     padding:20vh 0 10vh 0; 
     background-color: #101010;
     color:e1e1e1; 
