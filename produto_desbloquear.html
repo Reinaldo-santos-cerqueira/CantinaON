@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <title>Remover produto</title>
+    <title>Desbloquear produto</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,9 +25,8 @@
             </a>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="tela_funcionario_principal.html">Informações</a></li>
+                <li><a href="tela_aluno_principal.html">Informações</a></li>
                 <li><a href="tela_funcionario_produtos.html">Produtos</a></li>
-                <li><a href="tela_funcionario_responsaveis.html">Responsaveis</a></li>
                 <li><a href="logout.php">Sair</a></li>
             </ul>
         </div>
@@ -40,9 +39,8 @@
                 </a>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="tela_funcionario_principal.html">Informações</a></li>
+                    <li><a href="tela_aluno_principal.html">Informações</a></li>
                     <li><a href="tela_funcionario_produtos.html">Produtos</a></li>
-                    <li><a href="tela_funcionario_responsaveis.html">Responsaveis</a></li>
                     <li><a href="logout.php">Sair</a></li>
                 </ul>
             </div>
@@ -56,10 +54,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6" style="margin: 0 auto;">
-                            <label  for="id">Qual item você deseja remover?(busque pelo ID)</label>
+                            <label  for="id">Qual item você deseja desbloquear?(busque pelo ID)</label>
                             <input name="text"oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"id="id"type="id">
                             <form action="tela_funcionario_principal.html">
-                                <button class="btn btn-light">Remover produto</button>
+                                <button class="btn btn-light">Desbloquear produto</button>
                             </form>
                     </div>
                 </div>

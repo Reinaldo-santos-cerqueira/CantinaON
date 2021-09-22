@@ -20,7 +20,7 @@
     <form action="cadastro.php" method="GET" class="form-validation" id="form-validation">
       <p class="text-center"><a href="index.html"><img src="img/logo_menu.png" alt="" style="height: 100%; width: 100%; max-width: 200px; max-height: 200px; margin-left: auto; margin-right: auto;"></a></p>
         <h2 style="text-align: center;">
-        Cadastro Comida
+        Cadastro bebida
       </h2>
       <div class="input">
         <input id="name" name="name" type="text" data-rules="required"/>
@@ -35,12 +35,12 @@
         <input  name="preco" id="preco"type="number" data-rules="required|"/>
       </div>
       <div class="input">
-        <label for="ingredientes">Ingredientes</label>
-        <textarea name="ingredientes" id="ingredientes" data-rules="required" cols="30" rows="2"></textarea>
+        <input id="fornecedor" name="fornecedor" type="text" data-rules="required"/>
+        <label for="fornecedor">Fornecedor</label>
       </div>
       <div class="input">
-        <label for="arquivo">Arquivo</label>  
-        <input  name="arquivo" id="codigo"type="file" data-rules="required"/>
+        <label for="Foto">Foto</label>  
+        <input  name="Foto" id="Foto"type="file" data-rules="required"/>
       </div>
       <button type="submit">Adicionar</button>
       <div class="social_icon" style="margin-top:1vh">
