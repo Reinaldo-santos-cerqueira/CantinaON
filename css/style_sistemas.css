@@ -92,12 +92,23 @@ header .menu_desktop.sticky{
 header .menu_mobile{
     display: none;
 }
-.loja_section,.informações_section,.meus_filhos_section,.add_saldo_section,.historico_section,.controle_section{
+.loja_section,.informações_section,.meus_filhos_section,.add_saldo_section,.historico_section,.controle_section,.func_produtos_section{
     padding:20vh 0 10vh 0; 
     background-color: #101010;
     color:e1e1e1; 
 }
-
+.func_produtos_section .card{
+    background-color: #10101011;
+    border:1px solid #e1e1e1;
+    color: #e1e1e1;
+    padding: 1vh;
+    margin-bottom: 5vh;
+}
+.func_produtos_section .card button{
+    width:100%;
+    padding: .5vh;
+    font-size: 1.2rem;
+}
 .loja_section .card{
     background-color: #10101011;
     border:1px solid #e1e1e1;
