@@ -30,7 +30,8 @@
                 <li><a href="tela_funcionario_principal.html">Informações</a></li>
                 <li><a href="tela_funcionario_produtos.html">Produtos</a></li>
                 <li><a href="tela_funcionario_responsaveis.html">Responsaveis</a></li>
-                <li><a href="logout.php">Sair</a></li>
+                <li><a href="tela_funcionario_alunos.html">Aluno</a></li>
+                <li><a href="login.html">Sair</a></li>
             </ul>
         </div>
         <div class="menu_mobile">
@@ -45,94 +46,48 @@
                     <li><a href="tela_funcionario_principal.html">Informações</a></li>
                     <li><a href="tela_funcionario_produtos.html">Produtos</a></li>
                     <li><a href="tela_funcionario_responsaveis.html">Responsaveis</a></li>
-                    <li><a href="logout.php">Sair</a></li>
+                    <li><a href="tela_funcionario_alunos.html">Aluno</a></li>
+                    <li><a href="login.html">Sair</a></li>
                 </ul>
             </div>
         </div>
     </header>
     <main>
-        <section class="func_produtos_section">
+        <section class="add_saldo_section">
             <div class="title">
-                <h2>Produtos</h2>
+                <h2>Responsaveis</h2>
             </div>
             <div class="container">
-                <div class="row" style="margin:10vh 0;">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="img/Food/Salgados/cachorro-quente.jpg"height="200px" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Cachorro Quente</h5>
-                                <h6 class="card-subtitle mb-2 text-muted ">R$ 5.00</h6>
-                                <p class="card-text">
-                                </p>
-                                <button class="btn btn-light">Editar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="img/Food/Salgados/coxinha.jpg" height="200px" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Coxinha</h5>
-                                <h6 class="card-subtitle mb-2 text-muted ">R$ 5.00</h6>
-                                <p class="card-text">
-                                </p>
-                                <button class="btn btn-light">Editar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="img/Food/Salgados/pastel.jpg" height="200px" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Pastel</h5>
-                                <h6 class="card-subtitle mb-2 text-muted ">R$ 5.00</h6>
-                                <p class="card-text">
-                                </p>
-                                <button class="btn btn-light">Editar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="img/Food/Salgados/risoles.jpg" height="200px" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Risole</h5>
-                                <h6 class="card-subtitle mb-2 text-muted ">R$ 5.00</h6>
-                                <p class="card-text">
-                                </p>
-                                <button class="btn btn-light">Editar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12" id="btn-final">
-                        <button  class="btn btn-light">Todos os produtos</button>
+                <div class="row" style="margin:0 auto;">
+                    <div class="col-md-6" style="margin: 0 auto;">
+                        <label style="width:100%;color: #e1e1e1 ;" for="id">Buscar o cpf do responsavel?</label>
+                        <input style="width:100%" name="cpf" class="form-control"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                            id="cpf" type="text">
+                        <button style="width:100%;padding: 1vh;" class="btn btn-light">Buscar</button>
                     </div>
                 </div>
-                <div class="row">
+                <p class="text-center">Os dados do responsavel aparecera aqui</p>
+                <div class="row" >
                     <div style="margin: 0 auto;" class="col-md-3">
-                        <a style="color: #e1e1e1;" href="produto_remove.html">
-                            <p class="text-center" style="font-size:1.5rem">Remove produtos</p>
+                        <p class="text-center" style="font-size:1.5rem">Remove responsavel</p>
+                        <button style="width:100%" onclick="alert('Responsavel removido')">
                             <img src="img/sub.png" class="card-img-top" alt="...">
-                        </a>
+                        </button>
                     </div>
                     <div style="margin: 0 auto;" class="col-md-3">
-                        <a style="color: #e1e1e1;" href="produto_cadastro_bebida.html">
-                            <p class="text-center" style="font-size:1.5rem">Adicionar Bebidas</p>
-                            <img src="img/add.png" class="card-img-top" alt="...">
-                        </a>
+                        <p class="text-center" style="font-size:1.5rem">Adicionar responsavel</p>
+                        <form action="">
+                            <button formaction="cadastro_responsavel.html" style="width:100%">
+                                <img src="img/add.png" class="card-img-top" alt="...">
+                            </button>
+                        </form>
                     </div>
                     <div style="margin: 0 auto;" class="col-md-3">
-                        <a style="color: #e1e1e1;" href="produto_cadastro_comida.html">
-                            <p class="text-center" style="font-size:1.5rem">Adicionar Comidas</p>
-                            <img src="img/add.png" class="card-img-top" alt="...">
-                        </a>
-                    </div>
-                    <div style="margin: 0 auto;" class="col-md-3">
-                        <a style="color: #e1e1e1;" href="produto_desbloquear.html">
-                            <p class="text-center" style="font-size:1.5rem">Desbloquear</p>
+                        <p class="text-center" style="font-size:1.5rem">Bloquear responsavel</p>
+                        <button style="width:100%" onclick="alert('Responsavel bloqueado')">
                             <img src="img/desbloquear.png" class="card-img-top" alt="...">
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
